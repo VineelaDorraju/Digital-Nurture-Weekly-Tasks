@@ -1,0 +1,28 @@
+interface Coffee {
+    String getDescription();
+}
+
+class SimpleCoffee implements Coffee {
+    public String getDescription() {
+        return "Coffee";
+    }
+}
+
+class MilkDecorator implements Coffee {
+    Coffee coffee;
+
+    MilkDecorator(Coffee coffee) {
+        this.coffee = coffee;
+    }
+
+    public String getDescription() {
+        return coffee.getDescription() + " + Milk";
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Coffee coffee = new MilkDecorator(new SimpleCoffee());
+        System.out.println(coffee.getDescription());
+    }
+}
