@@ -1,6 +1,6 @@
-# Employee Management System using PL/SQL
+Employee Management System using PL/SQL
 
-## Project Description
+___Project Description___
 
 This project is a simple Employee Management System developed using Oracle PL/SQL. The main purpose of the project is to understand how PL/SQL extends SQL by adding programming features such as variables, conditions, loops, exception handling, procedures, functions, packages, and triggers.
 
@@ -10,9 +10,8 @@ Instead of keeping all the logic inside SQL statements, PL/SQL is used to make t
 
 Although this is a beginner-level project, it follows the basic workflow of a real Employee Management System where data is stored, updated, validated, processed, and monitored inside the database.
 
----
 
-## Project Workflow
+___Project Workflow___
 
 1. Create the required database tables.
 2. Insert sample employee records.
@@ -28,56 +27,19 @@ Although this is a beginner-level project, it follows the basic workflow of a re
 12. Organize procedures and functions using packages.
 13. Automatically maintain employee activity using database triggers.
 
----
+___Concepts Used___
 
-## Concepts Used
-
-### Variables and Data Types
-
-Variables are used to temporarily store values retrieved from the database. `%TYPE` is used so that variables automatically use the same data type as table columns.
-
-### Record Variables
-
-`%ROWTYPE` allows an entire row from a table to be stored in a single variable, making it easier to work with complete employee records.
-
-### Anonymous PL/SQL Blocks
-
-Most examples are written as anonymous blocks to demonstrate how PL/SQL code is executed without permanently storing it in the database.
-
-### Conditional Statements
-
-`IF`, `ELSIF`, and `ELSE` statements are used to make decisions based on employee salary values.
-
-### Loops
-
-FOR loops are used to process multiple employee records one by one without writing repeated SQL statements.
-
-### Exception Handling
-
-Exceptions are used to prevent the program from stopping unexpectedly. The project demonstrates handling predefined exceptions such as `NO_DATA_FOUND`.
-
-### Cursors
-
-Explicit cursors are used to retrieve multiple rows from a query. The project demonstrates the complete cursor lifecycle using `OPEN`, `FETCH`, and `CLOSE`.
-
-### Stored Procedures
-
-Procedures are created to perform reusable operations, such as displaying employee information, without rewriting the same code.
-
-### Functions
-
-Functions are used when a PL/SQL program needs to return a value, such as retrieving an employee's salary.
-
-### Packages
-
-Packages are used to group related procedures and functions together, improving code organization and reusability.
-
-### Triggers
-
-Triggers execute automatically whenever a specific database event occurs. In this project, a trigger records employee updates in a log table whenever salary information is modified.
-
----
-
+1. Variables and Data Types: Variables are used to temporarily store values retrieved from the database.
+2. Record Variables
+3. Anonymous PL/SQL Blocks: Most examples are written as anonymous blocks to demonstrate how PL/SQL code is executed without permanently storing it in the database.
+4. Conditional Statements: Used to make decisions based on employee salary values.
+5. Loops: FOR loops are used to process multiple employee records one by one without writing repeated SQL statements.
+6. Exception Handling: Exceptions are used to prevent the program from stopping unexpectedly.
+7. Cursors: Explicit cursors are used to retrieve multiple rows from a query. The project demonstrates the complete cursor lifecycle using `OPEN`, `FETCH`, and `CLOSE`.
+8. Stored Procedures: Procedures are created to perform reusable operations, such as displaying employee information, without rewriting the same code.
+9. Functions: Functions are used when a PL/SQL program needs to return a value, such as retrieving an employee's salary.
+10. Packages: Packages are used to group related procedures and functions together, improving code organization and reusability.
+11. Triggers: Triggers execute automatically whenever a specific database event occurs. In this project, a trigger records employee updates in a log table whenever salary information is modified.
 
 ## Learning Outcomes
 
