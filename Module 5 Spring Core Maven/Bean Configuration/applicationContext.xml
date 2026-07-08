@@ -1,0 +1,10 @@
+<beans>
+    <bean id="course" class="Course">
+        <property name="courseName" value="Spring Framework"/>
+    </bean>
+
+    <bean id="student" class="Student">
+        <property name="name" value="Vineela"/>
+        <property name="course" ref="course"/>
+    </bean>
+</beans>
