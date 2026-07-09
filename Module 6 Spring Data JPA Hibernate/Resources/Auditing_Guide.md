@@ -1,4 +1,0 @@
-@EnableJpaAuditing
-@EntityListeners
-@CreatedDate
-@LastModifiedDate

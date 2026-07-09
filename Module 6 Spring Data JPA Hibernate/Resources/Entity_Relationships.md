@@ -1,4 +1,0 @@
-OneToOne
-OneToMany
-ManyToOne
-ManyToMany
