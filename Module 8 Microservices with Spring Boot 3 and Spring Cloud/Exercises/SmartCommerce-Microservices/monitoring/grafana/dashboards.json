@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "dashboards": [
+    {
+      "title": "SmartCommerce Overview",
+      "widgets": [
+        {
+          "type": "metric",
+          "title": "Total Requests",
+          "index": "smartcommerce-logs-*",
+          "field": "request.count"
+        },
+        {
+          "type": "metric",
+          "title": "Error Rate",
+          "index": "smartcommerce-logs-*",
+          "field": "error.count"
+        },
+        {
+          "type": "metric",
+          "title": "Active Services",
+          "index": "smartcommerce-logs-*",
+          "field": "service_name.keyword"
+        }
+      ]
+    },
+    {
+      "title": "Request Trends",
+      "widgets": [
+        {
+          "type": "line",
+          "title": "Requests Over Time",
+          "index": "smartcommerce-logs-*",
+          "x-axis": "@timestamp",
+          "y-axis": "request.count"
+        }
+      ]
+    },
+    {
+      "title": "Error Monitoring",
+      "widgets": [
+        {
+          "type": "bar",
+          "title": "Errors by Service",
+          "index": "smartcommerce-logs-*",
+          "x-axis": "service_name.keyword",
+          "y-axis": "error.count"
+        }
+      ]
+    },
+    {
+      "title": "Service Logs",
+      "widgets": [
+        {
+          "type": "table",
+          "title": "Recent Logs",
+          "index": "smartcommerce-logs-*",
+          "columns": [
+            "@timestamp",
+            "service_name",
+            "level",
+            "message"
+          ]
+        }
+      ]
+    }
+  ]
+}
