@@ -1,0 +1,9 @@
+echo "alpha" > data.txt
+git add data.txt
+
+echo "beta" >> data.txt
+
+git diff
+git diff --staged
+
+git commit -m "feat: staged alpha only"
