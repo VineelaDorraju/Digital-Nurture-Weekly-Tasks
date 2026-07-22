@@ -1,0 +1,35 @@
+name: CD Deployment Pipeline
+
+on:
+  workflow_run:
+    workflows: ["Java CI Pipeline"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Build Artifact
+        run: |
+          javac App.java
+          jar cfe app.jar App *.class
+
+      - name: Deploy Application
+        run: |
+          nohup java -jar app.jar > deploy.log 2>&1 &
+          sleep 3
+
+      - name: Verify Deployment
+        run: |
+          curl -f http://localhost:5000/ || exit 1

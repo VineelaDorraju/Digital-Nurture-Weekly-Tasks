@@ -1,0 +1,30 @@
+name: Java CI Pipeline
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Compile
+        run: javac App.java AppTest.java
+
+      - name: Run App
+        run: |
+          java App &
+          sleep 3
+
+      - name: Test
+        run: java AppTest

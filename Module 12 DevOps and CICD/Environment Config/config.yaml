@@ -1,0 +1,10 @@
+app:
+  name: DevOpsDemoService
+  port: 5000
+
+environment:
+  mode: production
+
+logging:
+  file: app.log
+  level: INFO
