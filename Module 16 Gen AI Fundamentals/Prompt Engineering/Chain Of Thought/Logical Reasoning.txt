@@ -1,0 +1,33 @@
+Role:
+You are an AI systems analyst.
+
+Task:
+A logistics company operates five warehouses connected by multiple transportation routes. Each route has a different travel cost and delivery time.
+
+Your objective is to determine the most efficient delivery path while satisfying the following constraints:
+
+- Total delivery time must not exceed 10 hours.
+- Transportation cost should be minimized.
+- At least one regional warehouse must be included in the route.
+- No warehouse may be visited more than once.
+
+Instructions:
+1. Analyze the available routes.
+2. Compare all valid delivery paths.
+3. Eliminate routes that violate constraints.
+4. Select the optimal solution.
+5. Present only the final route, total cost, total time, and a brief justification.
+
+Expected Output
+
+Optimal Route
+Warehouse A → Warehouse C → Warehouse E
+
+Total Cost
+$4,850
+
+Delivery Time
+8.5 Hours
+
+Status
+Optimal Route Selected

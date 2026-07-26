@@ -1,0 +1,36 @@
+Role:
+You are a software architect.
+
+Task:
+Design an efficient algorithm for a university course registration system.
+
+Requirements
+
+- Detect schedule conflicts.
+- Validate prerequisite completion.
+- Allocate seats fairly.
+- Maintain a waiting list.
+- Minimize execution time for 100,000 students.
+- Optimize memory usage.
+
+Instructions
+
+1. Break the problem into logical stages.
+2. Design the algorithm.
+3. Analyze its time and space complexity.
+4. Recommend suitable data structures.
+5. Present the final solution in a structured report.
+
+Expected Output
+
+Registration Validation Completed
+
+Eligible Students : 98,742
+Schedule Conflicts : 1,103
+Waitlisted : 155
+
+Overall Complexity
+O(n log n)
+
+Status
+Algorithm Ready for Deployment

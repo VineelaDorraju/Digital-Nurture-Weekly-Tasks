@@ -1,0 +1,20 @@
+Prompt:
+Create a C# application for a smart hospital management system. The application should register patients, schedule appointments, assign doctors based on specialization, estimate consultation waiting time using appointment priority, maintain medical history, generate billing with insurance deductions, and export the daily summary to a JSON file. The program should validate duplicate patient IDs, detect scheduling conflicts, and provide meaningful error messages for invalid operations.
+
+Expected Output:
+Hospital Management System
+
+Patient Registered Successfully
+Doctor Assigned: Dr. Meera Reddy
+Appointment Time: 10:30 AM
+
+Estimated Waiting Time: 18 minutes
+
+Insurance Coverage Applied: 80%
+
+Consultation Fee: $150.00
+Insurance Deduction: $120.00
+Amount Payable: $30.00
+
+Daily Summary Exported Successfully
+File: hospital_summary.json

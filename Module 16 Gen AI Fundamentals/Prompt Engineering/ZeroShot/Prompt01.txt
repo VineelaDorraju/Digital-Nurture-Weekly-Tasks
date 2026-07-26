@@ -1,0 +1,16 @@
+Prompt:
+Design a Python application that analyzes a student's semester marks stored in a CSV file. The program should calculate the total, average, highest score, lowest score, letter grade, and pass/fail status for each student. Generate a ranked leaderboard, identify the class topper, and save the final report to a new CSV file. The application should gracefully handle missing or invalid records.
+
+Expected Output:
+Student Performance Report Generated Successfully
+
+Topper:
+Rahul Sharma
+
+Rank | Name           | Average | Grade | Status
+1    | Rahul Sharma   | 94.25   | A+    | Pass
+2    | Priya Verma    | 91.80   | A     | Pass
+3    | Aman Patel     | 88.40   | B+    | Pass
+
+Report saved as:
+student_report.csv

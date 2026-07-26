@@ -1,0 +1,41 @@
+Role:
+You are reviewing an enterprise application before production deployment.
+
+Example 1
+
+Problem
+Repeated linear searches inside nested loops.
+
+Recommendation
+Replace sequential lookups with hash-based indexing.
+
+Result
+Execution time reduced significantly.
+
+
+Example 2
+
+Problem
+Database queries executed repeatedly inside a loop.
+
+Recommendation
+Retrieve data in batches and reuse cached results.
+
+Result
+Database calls minimized.
+
+
+Task
+
+Review the provided C# source code and produce a professional engineering report containing:
+
+- Performance Analysis
+- Time and Space Complexity
+- Security Assessment
+- Thread Safety Review
+- Memory Optimization Opportunities
+- Refactoring Suggestions
+- Design Pattern Recommendations
+- Production Readiness Checklist
+
+Present the report using clear section headings and actionable recommendations.

@@ -1,0 +1,26 @@
+Role:
+You are a senior backend engineer designing a production-grade transaction processing platform.
+
+Task:
+Design and implement a Python application that processes a continuous stream of financial transactions.
+
+Requirements:
+- Detect duplicate transactions in real time.
+- Identify suspicious transaction patterns using configurable rules.
+- Support concurrent processing with thread-safe data structures.
+- Maintain only the most recent 24 hours of transaction history using an efficient eviction strategy.
+- Generate a summary report containing processed transactions, detected anomalies, average processing latency, and memory consumption.
+- Organize the solution into reusable modules with clean architecture.
+- Optimize the implementation for scalability, maintainability, and performance.
+
+Expected Output:
+
+Transaction Processing Started...
+
+Transactions Processed : 1,000,000
+Duplicates Detected    : 428
+Alerts Generated       : 19
+Average Latency        : 8 ms
+Memory Usage           : 142 MB
+
+Daily Report Generated Successfully

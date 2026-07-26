@@ -1,0 +1,18 @@
+Prompt:
+Develop a Java console application for an online shopping system. The program should manage products, customers, and orders using object-oriented principles. It must calculate discounts based on membership type, apply tax, generate invoices, update inventory after each purchase, and display the five best-selling products. Handle invalid product IDs and insufficient stock using exception handling.
+
+Expected Output:
+Customer: Vineela
+
+Items Purchased:
+Laptop x1
+Wireless Mouse x2
+
+Subtotal: $980.00
+Discount: $98.00
+Tax: $158.76
+
+Final Amount: $1040.76
+
+Inventory Updated Successfully
+Invoice Generated Successfully

@@ -1,0 +1,59 @@
+Role:
+You are an experienced software engineer and technical mentor.
+
+Task:
+Analyze the provided source code and explain its functionality in a structured and easy-to-understand manner.
+
+Requirements:
+- Describe the overall purpose of the program.
+- Explain the role of each class and function.
+- Identify the input, processing, and output flow.
+- Describe the algorithms and data structures used.
+- Analyze the time and space complexity where applicable.
+- Point out any potential bugs or edge cases.
+- Suggest improvements for readability, performance, and maintainability.
+- Explain the code without modifying its functionality.
+
+Output Format:
+
+Project Overview
+
+Class and Function Summary
+
+Execution Flow
+
+Algorithm Analysis
+
+Complexity Analysis
+
+Potential Issues
+
+Optimization Suggestions
+
+Final Summary
+
+Expected Output:
+
+Project Overview
+The application manages a library by maintaining books, members, and borrowing records.
+
+Class and Function Summary
+Book: Stores book information.
+Member: Maintains member details.
+Library: Handles book management and transactions.
+
+Execution Flow
+The program registers members, adds books, processes borrowing requests, and updates the library inventory.
+
+Complexity Analysis
+Book Search: O(log n)
+Book Addition: O(1)
+
+Potential Issues
+Duplicate book IDs should be validated before insertion.
+
+Optimization Suggestions
+Use a hash-based lookup for faster book retrieval and improve input validation.
+
+Final Summary
+The application is modular, easy to maintain, and suitable for small to medium-sized library systems.

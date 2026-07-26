@@ -1,0 +1,42 @@
+Role:
+You are an expert software engineer.
+
+Task:
+Generate a production-ready Python application for a Library Management System.
+
+Requirements:
+- Follow object-oriented programming principles.
+- Create classes for Book, Member, and Library.
+- Allow adding, removing, searching, issuing, and returning books.
+- Prevent duplicate book IDs.
+- Display available and issued books separately.
+- Validate user input.
+- Handle exceptions gracefully.
+- Keep the code modular and reusable.
+- Use meaningful class and method names.
+- Generate clean, readable, and efficient code.
+
+Output Requirements:
+- Complete Python source code.
+- Proper class structure.
+- Example usage.
+- Meaningful console output.
+
+Expected Output:
+
+========== Library Management System ==========
+
+Book Added Successfully
+Book ID : B101
+Title   : Clean Code
+
+Member Registered Successfully
+Member ID : M201
+
+Book Issued Successfully
+Issued To : Alice
+
+Available Books : 14
+Issued Books    : 1
+
+Operation Completed Successfully

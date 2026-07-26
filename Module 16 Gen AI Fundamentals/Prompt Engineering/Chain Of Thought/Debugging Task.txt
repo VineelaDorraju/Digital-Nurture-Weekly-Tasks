@@ -1,0 +1,41 @@
+Role:
+You are a senior software engineer performing production debugging.
+
+Task:
+A payment processing service occasionally produces duplicate invoices and intermittent timeout errors under heavy traffic.
+
+Objectives
+
+- Identify the root cause.
+- Analyze logs and execution flow.
+- Detect concurrency issues.
+- Recommend code-level fixes.
+- Suggest performance improvements.
+- Define a testing strategy to verify the solution.
+
+Instructions
+
+1. Examine the observed symptoms.
+2. Identify possible failure points.
+3. Evaluate each possibility.
+4. Select the most probable cause.
+5. Recommend the final corrective actions.
+6. Present only the summarized findings and recommendations.
+
+Expected Output
+
+Issue Identified
+
+Primary Cause
+Race condition during invoice generation
+
+Secondary Cause
+Database connection pool exhaustion
+
+Recommended Fixes
+Implement synchronization
+Enable request idempotency
+Optimize database connection management
+
+Status
+System Ready for Regression Testing

@@ -1,0 +1,30 @@
+Role:
+You are a software architect designing a highly scalable URL shortening platform.
+
+Task:
+Develop a Java application that simulates a distributed URL shortening service.
+
+Requirements:
+- Generate unique collision-resistant short URLs.
+- Handle concurrent requests efficiently.
+- Cache frequently accessed URLs.
+- Expire inactive links automatically.
+- Record analytics including browser, operating system, device, and geographic region.
+- Follow object-oriented design principles with modular service classes.
+- Handle failures and invalid requests gracefully.
+
+Expected Output:
+
+Service Started
+
+Original URL
+https://example.com/articles/artificial-intelligence
+
+Generated URL
+https://short.io/A7dK29
+
+Status : Active
+
+Analytics Module Initialized
+
+Service Ready
